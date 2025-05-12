@@ -1,0 +1,230 @@
+[
+  {
+    "id": 100,
+    "name": "Classic Virat Kohli bottle",
+    "category": "bottle",
+    "description": "A classic Virat Kohli battle",
+    "price": 499,
+    "imageUrl": "images/bottle/viratb.png"
+  },
+  {
+    "id": 101,
+    "name": " Sky Butterflies Mug",
+    "category": "cup",
+    "description": "A serene collection of blue butterflies in flight decorates this bright white mug, complete with a soft blue handle. A peaceful choice for your morning coffee ritual.",
+    "price": 450,
+    "imageUrl": "images/cup/cup8.png"
+  },
+  {
+    "id": 10,
+    "name": "Superman logo cap",
+    "category": "cap",
+    "description": "Perfect cap to protect you from  sunlight",
+    "price": 180,
+    "imageUrl": "images/cap/cap1.png"
+  },
+  {
+    "id": 11,
+    "name": "Batman logo cap",
+    "category": "cap",
+    "description": "Perfect cap to protect you from  sunlight",
+    "price": 180,
+    "imageUrl": "images/cap/cap2.png"
+  },
+  {
+    "id": 12,
+    "name": "Cup",
+    "category": "cup",
+    "description": "Perfect for gift",
+    "price": 250,
+    "imageUrl": "images/cup/cup1.png"
+  },
+  {
+    "id": 13,
+    "name": "Golden Bloom Heart Mug",
+    "category": "cup",
+    "description": "A charming white ceramic mug adorned with delicate golden-yellow leaves and a unique heart-shaped yellow handle. Perfect for cozy evenings or as a romantic gift.",
+    "price": 450,
+    "imageUrl": "images/cup/cup3.png"
+  },
+  {
+    "id": 14,
+    "name": "Panda Nap Mug",
+    "category": "cup",
+    "description": "Cute and calming, this mug features two pandas lounging on bamboo branches. Its black handle complements the minimalist black-and-white theme — ideal for animal lovers.",
+    "price": 450,
+    "imageUrl": "images/cup/cup4.png"
+  },
+  {
+    "id": 15,
+    "name": "Love Hamsters Mug",
+    "category": "cup",
+    "description": "Overflowing with cuteness, this mug displays a playful hamster couple in various poses surrounded by hearts. Great for gifting or adding a touch of fun to your tea time.",
+    "price": 450,
+    "imageUrl": "images/cup/cup5.png"
+  },
+  {
+    "id": 16,
+    "name": "Crimson Petals Mug",
+    "category": "cup",
+    "description": "A bold and elegant design of red, black, and white floral petals wrapping around the mug. The sleek black handle adds contrast, making it a stylish addition to any kitchen.",
+    "price": 450,
+    "imageUrl": "images/cup/cup6.png"
+  },
+  {
+    "id": 17,
+    "name": "Purple Bloom Mug",
+    "category": "cup",
+    "description": "This mug boasts stunning purple flowers painted in a soft watercolor style, paired with a dark navy handle. Perfect for flower lovers and those who enjoy artistic mugs.",
+    "price": 450,
+    "imageUrl": "images/cup/cup7.png"
+  },
+  {
+    "id": 18,
+    "name": "MS Dhoni water bottle",
+    "category": "bottle",
+    "description": "Keep your water cold and hot with this bottle.",
+    "price": 450,
+    "imageUrl": "images/bottle/dhonib.png"
+  },
+  {
+    "id": 19,
+    "name": "MS Dhoni bottle",
+    "category": "bottle",
+    "description": "Keep your water cold and hot with this bottle.",
+    "price": 450,
+    "imageUrl": "images/bottle/dhonib2.png"
+  },
+  {
+    "id": 20,
+    "name": "Rohit Sharma water bottle",
+    "category": "bottle",
+    "description": "Keep your water cold and hot with this bottle.",
+    "price": 450,
+    "imageUrl": "images/bottle/rohitb.png"
+  },
+  {
+    "id": 21,
+    "name": "Virat Kohli water bottle",
+    "category": "bottle",
+    "description": "Keep your water cold and hot with this bottle.",
+    "price": 450,
+    "imageUrl": "images/bottle/b1.png"
+  },
+  {
+    "id": 22,
+    "name": "Cristiano Ronaldo water bottle",
+    "category": "bottle",
+    "description": "Keep your water cold and hot with this bottle.",
+    "price": 450,
+    "imageUrl": "images/bottle/b2.png"
+  },
+  {
+    "id": 23,
+    "name": "Customise name water bottle",
+    "category": "bottle",
+    "description": "Customise by your name. Just go to customise product and fill out the form.",
+    "price": 450,
+    "imageUrl": "images/bottle/b3.png"
+  },
+  {
+    "id": 24,
+    "name": "Customise couple water bottle.",
+    "category": "bottle",
+    "description": "Customise the bottle by giving your and your partner's name. Go to product, select category, customise product and fill out the form.",
+    "price": 450,
+    "imageUrl": "images/bottle/b4.png"
+  },
+    {
+      "id": 25,
+      "name": "Blue Spider Mousepad",
+      "category": "mousepad",
+      "description": "Glow-in-dark spider design",
+      "price": 99,
+      "imageUrl": "images/mousepad/mp1.png"
+    },
+    {
+      "id": 26,
+      "name": "Red Hoodie Mousepad",
+      "category": "mousepad",
+      "description": "Streetwear style artwork",
+      "price": 99,
+      "imageUrl": "images/mousepad/mp2.png"
+    },
+    {
+      "id": 27,
+      "name": "Goku Power Pose",
+      "category": "mousepad",
+      "description": "Goku with intense aura",
+      "price": 99,
+      "imageUrl": "images/mousepad/mp3.png"
+    },
+    {
+      "id": 28,
+      "name": "Cristiano Ronaldo",
+      "category": "mousepad",
+      "description": "High-energy slam dunk",
+      "price": 99,
+      "imageUrl": "images/mousepad/mp4.png"
+    },
+    {
+      "id": 29,
+      "name": "Snow Leopard Splash",
+      "category": "mousepad",
+      "description": "Watercolor style leopard",
+      "price": 99,
+      "imageUrl": "images/mousepad/mp5.png"
+    },
+    {
+      "id": 30,
+      "name": "Goku Galaxy Mousepad",
+      "category": "mousepad",
+      "description": "Epic cosmic backdrop",
+      "price": 99,
+      "imageUrl": "images/mousepad/mp6.png"
+    },
+    {
+      "id": 31,
+      "name": "Red Spider Hero",
+      "category": "mousepad",
+      "description": "Stylized Spidey pose",
+      "price": 99,
+      "imageUrl": "images/mousepad/mp7.png"
+    },
+    {
+      "id": 32,
+      "name": "Game Over Retro",
+      "category": "mousepad",
+      "description": "Cool retro gaming vibe",
+      "price": 99,
+      "imageUrl": "images/mousepad/mp8.png"
+    },
+    {
+      "id": 33,
+      "name": "Kaiju Battle Scene",
+      "category": "mousepad",
+      "description": "Fire and fury monster art",
+      "price": 99,
+      "imageUrl": "images/mousepad/mp9.png"
+    },
+    
+      {
+        "id": 36,
+        "name": "Customizable Summer Tee",
+        "category": "tshirt",
+        "description": "Comfort-fit summer wear. Customise with your own typography, style, or image. More versions coming soon.",
+        "price": 250,
+        "imageUrl": "images/tshirt/tshirt1.png"
+      },
+      {
+        "id": 37,
+        "name": "Event Edition Tee",
+        "category": "tshirt",
+        "description": "Ideal for events. Fully customizable via the customise option to fit your purpose.",
+        "price": 200,
+        "imageUrl": "images/tshirt/tshirt2.png"
+      }
+    ]
+    
+  
+

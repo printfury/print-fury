@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products-Print Fury</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="site-logo-link">
+                <img src="images/logo.png" alt="Your Brand Logo" class="site-logo"> </a>
+            <nav>
+                <ul>
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="products.html">Products</a></li>
+                    <li><a href="index.html#about">About Us</a></li> 
+                    <li><a href="index.html#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <h2>All Products</h2>
+
+            <div class="product-filter">
+                <label for="category-filter">Filter by Category:</label>
+                <select id="category-filter">
+                    <option value="all">All</option>
+                    <option value="cup">Cup</option>
+                    <option value="bottle">Bottle</option>
+                    <option value="tshirt">T-shirt</option> <option value="mousepad">Mousepad</option>
+                    <option value="cap">Cap</option>
+                    <option value="own customization">Own Customization</option>
+                </select>
+            </div>
+
+            <div class="product-grid" id="all-products-grid">
+                </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Print Fury. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
