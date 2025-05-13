@@ -25,6 +25,24 @@ document.addEventListener('DOMContentLoaded', () => {
             window.open(GOOGLE_FORM_URL, '_blank');
         }
     });
+
+    // Header scroll behavior
+    let lastScrollTop = 0;
+    const header = document.querySelector('header');
+
+    if (header) {
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop && scrollTop > header.offsetHeight) {
+                header.classList.add('header-hidden');
+            } else {
+                header.classList.remove('header-hidden');
+            }
+
+            lastScrollTop = scrollTop;
+        });
+    }
 });
 
 async function loadProductsAndSetupFilter() {
@@ -172,8 +190,8 @@ function filterProducts(category, products) {
         return;
     }
 
-    const filteredProducts = category === 'all' 
-        ? products 
+    const filteredProducts = category === 'all'
+        ? products
         : products.filter(product => product.category && product.category.toLowerCase() === category.toLowerCase());
 
     displayProducts(filteredProducts, 'all-products-grid');
