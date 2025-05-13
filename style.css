@@ -1,91 +1,93 @@
 /* General Styles */
 body {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif; /* Using Roboto for a modern, professional look */
     margin: 0;
     padding: 0;
-    background-color: #E0F2F7; /* Very Light Sky Blue Background */
-    color: #333333; /* Dark Gray Text */
-    line-height: 1.6;
+    background-color: #F0F8FF; /* Alice Blue - a softer, more refined light blue */
+    color: #34495E; /* Darker, professional charcoal gray for main text */
+    line-height: 1.7; /* Slightly increased line-height for readability */
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px; /* Add padding to container */
+    padding: 0 25px; /* Increased padding for container */
 }
 
 /* Header Styles */
 header {
     background-color: #FFFFFF; /* White Header Background */
-    padding: 10px 0;
-    box-shadow: 0 3px 8px rgba(135, 206, 235, 0.3); /* Sky Blue Shadow Tone */
-    position: sticky; /* Make header sticky */
+    padding: 12px 0; /* Slightly more padding for a substantial header */
+    box-shadow: 0 4px 12px rgba(70, 130, 180, 0.15); /* Steel Blue shadow for sophistication */
+    position: sticky;
     top: 0;
-    z-index: 1000; /* Ensure header stays on top */
+    z-index: 1000;
+    border-bottom: 1px solid #E0F0F8; /* Subtle bottom border */
 }
 
 .header-content {
-    display: flex; /* Use flexbox for alignment */
-    justify-content: space-between; /* Space out logo and nav */
-    align-items: center; /* Vertically align items */
-    padding: 0 20px; /* Add padding inside header content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px; /* Matching container padding */
 }
 
 .site-logo-link {
-    display: inline-block; /* Allows control over margins/padding if needed */
-    margin-right: 20px; /* Space between logo and nav */
-    text-decoration: none; /* Remove underline from the link */
+    display: inline-block;
+    margin-right: 30px; /* More space from nav */
+    text-decoration: none;
 }
 
 .site-logo {
-    height: 40px; /* Set a fixed height for the logo */
-    max-height: 50px; /* Ensure logo doesn't get too large */
-    width: auto; /* Maintain aspect ratio */
-    vertical-align: middle; /* Align logo nicely with nav if they are on the same line */
+    height: 45px; /* Slightly larger logo for better presence */
+    max-height: 60px;
+    width: auto;
+    vertical-align: middle;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.1)); /* Subtle shadow for logo depth */
 }
-
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: center; /* Center nav links if header-content is not used */
+    display: flex; /* Use flexbox for nav items too */
+    align-items: center;
 }
 
 nav ul li {
-    display: inline-block; /* Use inline-block for better spacing control */
-    margin-left: 25px; /* Increase space between nav items */
+    margin-left: 30px; /* Consistent spacing for nav items */
 }
 
 nav ul li:first-child {
-    margin-left: 0; /* No left margin for the first item */
+    margin-left: 0;
 }
-
 
 nav ul li a {
     text-decoration: none;
-    color: #87CEEB; /* Sky Blue Links */
-    font-weight: bold;
-    transition: color 0.3s ease, border-bottom 0.3s ease; /* Add transition */
-    padding-bottom: 5px; /* Add padding for underline effect */
-    border-bottom: 2px solid transparent; /* Transparent border initially */
+    color: #5DADE2; /* Slightly softer Sky Blue for links */
+    font-weight: 500; /* Lighter font-weight for a modern touch */
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 7px; /* More padding for a clear underline */
+    border-bottom: 2px solid transparent;
+    font-size: 1.05em; /* Slightly larger nav links */
 }
 
 nav ul li a:hover {
-    color: #03A9F4; /* Vibrant Blue on Hover */
-    border-bottom-color: #03A9F4; /* Vibrant Blue underline on hover */
+    color: #2196F3; /* Deeper Blue on Hover */
+    border-bottom-color: #2196F3; /* Deeper Blue underline on hover */
 }
 
 /* Hero Section */
 .hero {
-    /* Replace this URL with the path to your background image */
-    background: url('images/hero-background.jpg') no-repeat center center/cover;
-    color: white; /* Text color on the background image */
+    /* Ensure this image is high-resolution and professionally designed */
+    background: url('images/banner.png') no-repeat center center/cover;
+    color: white;
     text-align: center;
-    padding: 80px 20px;
-    margin-bottom: 30px;
+    padding: 100px 20px; /* Increased vertical padding for impact */
+    margin-bottom: 40px; /* More space below hero */
     position: relative;
-    box-shadow: 0 4px 10px rgba(135, 206, 235, 0.4); /* Sky Blue Shadow Tone */
+    box-shadow: 0 6px 15px rgba(70, 130, 180, 0.25); /* Pronounced Steel Blue shadow */
+    overflow: hidden; /* To contain any potential image overflow on subtle animations */
 }
 
 .hero::before {
@@ -95,271 +97,529 @@ nav ul li a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.3); /* Dark overlay */
+    background: rgba(0, 0, 0, 0.45); /* Slightly darker overlay for better text contrast */
+    z-index: 0; /* Ensure overlay is behind content */
 }
 
 .hero-content {
     position: relative;
     z-index: 1;
+    animation: fadeIn 1s ease-out; /* Fade-in animation for content */
 }
 
 .hero h1 {
     margin-top: 0;
-    font-size: 3em; /* Larger hero title */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
+    font-size: 3.5em; /* Larger and more impactful hero title */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+    font-weight: 700; /* Bold title */
+    letter-spacing: 1px; /* Slightly more space between letters */
 }
 
 .hero p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Text shadow */
+    font-size: 1.4em; /* Larger hero paragraph for prominence */
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    max-width: 700px; /* Constrain width for better readability */
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
 }
 
 /* Section Styles */
 .section {
-    background-color: #FFFFFF; /* White Section Background */
-    padding: 30px;
-    margin-bottom: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle Gray Shadow */
+    background-color: #FFFFFF;
+    padding: 40px; /* More padding for sections */
+    margin-bottom: 40px; /* More space between sections */
+    border-radius: 10px; /* Slightly more rounded corners */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08); /* Refined subtle gray shadow */
+    border-top: 3px solid #B0D0ED; /* Light blue border at the top of sections */
 }
 
 .section h2 {
     text-align: center;
-    color: #03A9F4; /* Vibrant Blue Heading */
-    margin-bottom: 30px;
-    text-shadow: 1px 1px 2px rgba(135, 206, 235, 0.3); /* Sky Blue Text Shadow */
+    color: #2196F3; /* Deeper Blue Heading */
+    margin-bottom: 40px; /* More space below section headings */
+    font-size: 2.5em; /* Larger section headings */
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(70, 130, 180, 0.2); /* Steel Blue text shadow */
+    position: relative;
+}
+
+.section h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #5DADE2; /* Sky Blue underline for headings */
+    margin: 15px auto 0;
+    border-radius: 2px;
 }
 
 /* Category Circles */
 .category-circles {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 40px; /* Increased gap for better separation */
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .category-circle {
     text-align: center;
     text-decoration: none;
-    color: #333333;
+    color: #34495E; /* Consistent dark gray for text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-circle:hover {
+    transform: translateY(-8px); /* More pronounced lift on hover */
+    box-shadow: 0 8px 18px rgba(70, 130, 180, 0.2); /* Soft shadow on hover */
 }
 
 .category-circle img {
-    width: 120px;
-    height: 120px;
+    width: 140px; /* Larger category images */
+    height: 140px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #87CEEB; /* Sky Blue Border */
-    transition: border-color 0.3s ease, transform 0.3s ease; /* Add transform transition */
+    border: 5px solid #85C1E9; /* Slightly thicker Sky Blue Border */
+    transition: border-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
 }
 
 .category-circle:hover img {
-    border-color: #03A9F4; /* Vibrant Blue on Hover */
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    border-color: #2196F3; /* Deeper Blue on Hover */
+    transform: scale(1.08); /* Slightly more enlarge on hover */
 }
 
 .category-circle p {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #444; /* Slightly darker text for category name */
+    margin-top: 15px;
+    font-weight: 600; /* Slightly bolder category name */
+    color: #4F6B8A; /* Slightly darker blue-gray for category name */
+    font-size: 1.1em;
 }
-
 
 /* Product Grid */
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Slightly larger min width */
-    gap: 25px; /* Increased gap */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Larger min-width for products */
+    gap: 30px; /* Increased gap for better visual separation */
 }
 
 .product-item {
-    background-color: #E0F2F7; /* Very Light Sky Blue Product Background */
-    border-radius: 8px;
-    padding: 15px;
+    background-color: #FFFFFF; /* White background for product items for a cleaner look */
+    border-radius: 10px; /* Slightly more rounded corners */
+    padding: 20px; /* More padding */
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08); /* Subtle Gray Shadow */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Refined shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #E5F2FA; /* Very light blue border */
 }
 
 .product-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 12px rgba(135, 206, 235, 0.4); /* Sky Blue Shadow on Hover */
+    transform: translateY(-8px); /* More pronounced lift */
+    box-shadow: 0 8px 20px rgba(70, 130, 180, 0.3); /* More prominent Sky Blue Shadow on Hover */
 }
 
 .product-item img {
     max-width: 100%;
-    height: 200px; /* Increased fixed height */
+    height: 220px; /* Slightly increased fixed height for larger images */
     object-fit: cover;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    border: 1px solid #B3E5FC; /* Light Sky Blue Border */
+    border-radius: 6px; /* Slightly more rounded image corners */
+    margin-bottom: 15px;
+    border: 2px solid #B3D9F7; /* Light Sky Blue Border */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* Subtle image shadow */
 }
 
 .product-item h3 {
-    margin: 10px 0 5px 0;
-    font-size: 1.2em; /* Slightly larger product title */
-    color: #4682B4; /* Steel Blue Product Name (can keep this shade for differentiation) */
+    margin: 15px 0 8px 0;
+    font-size: 1.3em; /* Larger product title */
+    color: #3B6E9E; /* Deeper Steel Blue Product Name */
+    font-weight: 600;
 }
 
 .product-item p {
-    margin: 5px 0;
+    margin: 8px 0;
     color: #555;
-    font-size: 0.95em;
-    min-height: 40px; /* Give description a min-height to prevent layout shifts */
+    font-size: 0.9em; /* Slightly smaller description for compactness */
+    min-height: 50px; /* Increased min-height for description */
+    overflow: hidden; /* Hide overflow if text is too long */
+    text-overflow: ellipsis; /* Add ellipsis for truncated text */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
 }
 
 .product-item .price {
-    font-size: 1.3em; /* Larger price font */
-    color: #03A9F4; /* Vibrant Blue Price */
+    font-size: 1.5em; /* Larger price font for emphasis */
+    color: #2196F3; /* Deeper Blue Price */
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
 }
 
 /* Buttons */
 .buy-now-button, .customize-button {
     display: inline-block;
-    background-color: #03A9F4; /* Vibrant Blue Button */
+    background-color: #2196F3; /* Deeper Blue Button */
     color: white;
-    padding: 12px 25px; /* Increased padding */
+    padding: 14px 30px; /* Increased padding for a more substantial button */
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 6px; /* Slightly more rounded buttons */
     font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.1s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
     border: none;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 1.05em;
+    letter-spacing: 0.5px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Shadow for buttons */
 }
 
 .buy-now-button:hover, .customize-button:hover {
-    background-color: #0288D1; /* Slightly darker blue on hover */
-    transform: translateY(-2px); /* Slight lift on hover */
+    background-color: #1976D2; /* Even darker blue on hover */
+    transform: translateY(-3px); /* More pronounced lift on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
 
 /* Testimonials */
 .testimonials-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Slightly larger min width */
-    gap: 25px; /* Increased gap */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Larger min-width for testimonials */
+    gap: 30px;
 }
 
 .testimonial-item {
-    background-color: #E0F2F7; /* Very Light Sky Blue Testimonial Background */
-    border-radius: 8px;
-    padding: 20px;
+    background-color: #F8FCFF; /* Very light blue for testimonial background */
+    border-radius: 10px;
+    padding: 25px; /* More padding */
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08); /* Subtle Gray Shadow */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid #85C1E9; /* Sky blue accent on the left */
 }
 
 .testimonial-item img {
-    width: 80px;
-    height: 80px;
+    width: 90px; /* Larger testimonial image */
+    height: 90px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 15px;
-    border: 3px solid #87CEEB; /* Sky Blue Border */
+    margin-bottom: 18px;
+    border: 4px solid #B0D0ED; /* Light Sky Blue Border */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .testimonial-item p {
     font-style: italic;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     color: #555;
+    line-height: 1.6;
 }
 
 .testimonial-item .reviewer-name {
     font-weight: bold;
-    color: #4682B4; /* Steel Blue Name */
+    color: #3B6E9E; /* Deeper Steel Blue Name */
+    font-size: 1.1em;
 }
 
 /* Product Filter */
 .product-filter {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #E0F8FF; /* Light background for the filter section */
+    border-radius: 8px;
+    box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.05); /* Inner shadow */
 }
 
 .product-filter label {
     font-weight: bold;
-    margin-right: 10px;
-    color: #4682B4; /* Steel Blue Label */
+    margin-right: 15px;
+    color: #3B6E9E; /* Deeper Steel Blue Label */
+    font-size: 1.1em;
 }
 
 .product-filter select {
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #B3E5FC; /* Light Sky Blue Border */
+    padding: 10px 15px; /* More padding for select dropdown */
+    border-radius: 6px;
+    border: 1px solid #B3D9F7; /* Light Sky Blue Border */
     font-size: 1em;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    appearance: none; /* Remove default arrow */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%232196F3%22%20d%3D%22M287%20114.2L146.2%20255.1%205.4%20114.2c-2.6-2.6-5.4-4.7-8.7-4.7H0v-1.9l8.7-4.7c3.3-2.6%206.1-4.7%208.7-4.7h261.2c3.3%200%206.1%202.1%208.7%204.7L292.4%20102.9v1.9h-5.4c-3.3%200-6.1%202.1-8.7%204.7z%22/%3E%3C/svg%3E'); /* Custom dropdown arrow */
+    background-repeat: no-repeat;
+    background-position: right 15px top 50%;
+    background-size: 10px;
+    cursor: pointer;
 }
 
 
 /* Footer */
 footer {
-    background-color: #4682B4; /* Steel Blue Footer Background (Pairs well with blues) */
+    background-color: #34495E; /* Dark charcoal gray for a sophisticated footer */
     color: white;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
+    padding: 30px 0; /* More padding for footer */
+    margin-top: 50px;
+    font-size: 0.95em;
+    border-top: 5px solid #2196F3; /* Vibrant blue line at the top of the footer */
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Responsive adjustments */
+@media (max-width: 992px) {
+    .hero h1 {
+        font-size: 3em;
+    }
+    .hero p {
+        font-size: 1.3em;
+    }
+    .section h2 {
+        font-size: 2.2em;
+    }
+    .product-grid, .testimonials-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+    }
+    .product-item img {
+        height: 180px;
+    }
+    .category-circle img {
+        width: 120px;
+        height: 120px;
+    }
+    nav ul li {
+        margin-left: 20px;
+    }
+}
+
 @media (max-width: 768px) {
     .header-content {
         flex-direction: column;
-        padding-bottom: 10px;
+        padding-bottom: 15px; /* Increased padding */
+        text-align: center;
     }
 
     .site-logo-link {
         margin-right: 0;
-        margin-bottom: 10px;
+        margin-bottom: 15px; /* More space below logo */
+    }
+    .site-logo {
+        height: 40px; /* Slightly smaller logo on mobile */
+    }
+
+    nav ul {
+        flex-wrap: wrap; /* Allow nav items to wrap */
+        justify-content: center;
+        padding-top: 10px;
     }
 
     nav ul li {
-        margin: 0 10px;
+        margin: 0 12px 10px; /* Adjust margin for wrapped items */
     }
 
+    .hero {
+        padding: 60px 20px; /* Less padding on mobile hero */
+    }
     .hero h1 {
-        font-size: 2em;
+        font-size: 2.5em;
+    }
+    .hero p {
+        font-size: 1.1em;
+        margin-bottom: 30px;
     }
 
-    .hero p {
-        font-size: 1em;
+    .section {
+        padding: 30px; /* Reduced section padding */
+        margin-bottom: 30px;
+    }
+    .section h2 {
+        font-size: 2em;
+        margin-bottom: 30px;
     }
 
     .category-circles {
-        gap: 20px;
+        gap: 25px;
+    }
+    .category-circle img {
+        width: 100px;
+        height: 100px;
+    }
+    .category-circle p {
+        font-size: 1em;
     }
 
     .product-grid, .testimonials-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 15px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Smaller min-width for more items per row if space allows */
+        gap: 20px;
     }
 
+    .product-item {
+        padding: 15px;
+    }
     .product-item img {
-         height: 150px;
+        height: 160px; /* Reduced image height for smaller screens */
+    }
+    .product-item h3 {
+        font-size: 1.1em;
+    }
+    .product-item p {
+        font-size: 0.85em;
+        min-height: 45px; /* Adjusted min-height */
+    }
+    .product-item .price {
+        font-size: 1.2em;
+    }
+
+    .buy-now-button, .customize-button {
+        padding: 10px 20px;
+        font-size: 0.95em;
+    }
+
+    .testimonial-item {
+        padding: 20px;
+    }
+    .testimonial-item img {
+        width: 70px;
+        height: 70px;
+    }
+    .testimonial-item p {
+        font-size: 0.9em;
+    }
+    .testimonial-item .reviewer-name {
+        font-size: 1em;
+    }
+
+    .product-filter {
+        margin-bottom: 30px;
+        padding: 15px;
+    }
+    .product-filter label {
+        font-size: 1em;
+        margin-right: 10px;
+    }
+    .product-filter select {
+        padding: 8px 12px;
+        font-size: 0.95em;
     }
 }
 
-@media (max-width: 480px) {
-     nav ul li {
-        margin: 0 5px;
-     }
+@media (max-width: 576px) {
+    .container {
+        padding: 0 15px; /* Even less padding for very small screens */
+    }
+    .header-content {
+        padding: 0 15px;
+    }
+    nav ul li {
+        margin: 0 8px 8px; /* Tighter spacing */
+    }
+    nav ul li a {
+        font-size: 0.9em;
+        padding-bottom: 5px;
+    }
 
-     .product-grid, .testimonials-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
-     }
+    .hero {
+        padding: 40px 15px;
+    }
+    .hero h1 {
+        font-size: 2em;
+    }
+    .hero p {
+        font-size: 0.9em;
+        margin-bottom: 25px;
+    }
 
-     .section {
+    .section {
         padding: 20px;
-     }
+        margin-bottom: 25px;
+    }
+    .section h2 {
+        font-size: 1.8em;
+        margin-bottom: 25px;
+    }
+    .section h2::after {
+        width: 60px;
+        margin-top: 10px;
+    }
+
+    .category-circles {
+        gap: 15px;
+        justify-content: center; /* Ensure they stay centered */
+    }
+    .category-circle img {
+        width: 80px; /* Smaller category images */
+        height: 80px;
+        border-width: 3px;
+    }
+    .category-circle p {
+        font-size: 0.9em;
+        margin-top: 8px;
+    }
+
+    .product-grid, .testimonials-grid {
+        grid-template-columns: 1fr; /* Stack items on very small screens */
+        gap: 15px;
+    }
+
+    .product-item {
+        padding: 12px;
+    }
+    .product-item img {
+        height: 140px; /* Smaller product images */
+    }
+    .product-item h3 {
+        font-size: 1em;
+    }
+    .product-item p {
+        font-size: 0.8em;
+        min-height: 40px;
+    }
+    .product-item .price {
+        font-size: 1.1em;
+    }
+
+    .buy-now-button, .customize-button {
+        padding: 8px 15px;
+        font-size: 0.85em;
+    }
+
+    .testimonial-item {
+        padding: 18px;
+    }
+    .testimonial-item img {
+        width: 60px;
+        height: 60px;
+    }
+    .testimonial-item p {
+        font-size: 0.85em;
+    }
+
+    .product-filter label {
+        display: block; /* Stack label and select */
+        margin-bottom: 8px;
+        margin-right: 0;
+    }
+    header {
+    background-color: #FFFFFF;
+    padding: 12px 0;
+    box-shadow: 0 4px 12px rgba(70, 130, 180, 0.15);
+    position: sticky; /* Keep it sticky */
+    top: 0;
+    z-index: 1000; /* Ensure it stays on top of other content */
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth show/hide */
 }
-.hero {
-    /* Replace this URL with the path to your high-resolution background image */
-    background: url('images/banner.png') no-repeat center center/cover;
-    color: white; /* Text color on the background image */
-    text-align: center;
-    padding: 80px 20px;
-    margin-bottom: 30px;
-    position: relative;
-    box-shadow: 0 4px 10px rgba(135, 206, 235, 0.4); /* Sky Blue Shadow Tone */
+
+/* Add a class to hide the header */
+.header-hidden {
+    transform: translateY(-100%); /* Move it completely off-screen */
+}
+    
 }
